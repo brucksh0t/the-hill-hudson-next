@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hudson Valley Weddings at The Hill · 1801 Palladian Barn · Hudson, NY</title>
+<meta name="description" content="Hudson Valley Weddings at The Hill: a historic 300-acre estate in Hudson, NY with the 1801 Palladian Barn. One wedding per weekend, May through October, 75 to 300 guests. 845-758-9002.">
+<meta name="theme-color" content="#1d2620">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;1,9..144,400&family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" type="image/webp" href="img/barn-front-1600.webp" imagesrcset="img/barn-front-800.webp 800w, img/barn-front-1600.webp 1600w" imagesizes="100vw">
+<link rel="stylesheet" href="styles.css">
+<script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('motion');</script>
+</head>
+<body>
+<p class="flag" role="note">Concept preview · not affiliated with The Hill</p>
+
+<header class="nav" id="top">
+  <a class="brand" href="#top" aria-label="The Hill, back to top"><svg viewBox="0 0 40 40" width="34" height="34" aria-hidden="true"><path d="M4 30 Q20 8 36 30" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="20" cy="15" r="4.5" fill="#d8a85a"/><path d="M2 33h36" stroke="currentColor" stroke-width="2.2"/></svg><span>The Hill</span></a>
+  <nav class="nav__links" aria-label="Main"><a href="#date">2027 dates</a><a href="#day">The day</a><a href="#story">Since 1801</a><a href="#included">Included</a><a href="#grounds">Grounds</a><a href="#visit">Visit</a></nav>
+  <a class="btn btn--ghost btn--sm nav__tour" href="tel:+18457589002">CALL TO TOUR</a>
+</header>
+
+<main>
+<section class="hero" aria-labelledby="hero-h">
+  <div class="hero__media" data-hero-media>
+    <picture><source type="image/webp" srcset="img/barn-front-800.webp 800w, img/barn-front-1600.webp 1600w" sizes="(max-width:800px) 1200px, 100vw"><img src="img/barn-front.jpg" alt="The pale-blue Palladian Barn at The Hill, its wide center doors open onto the lawn." width="1600" height="1067" fetchpriority="high" decoding="async"></picture>
+  </div>
+  <canvas class="hero__light" data-motes aria-hidden="true"></canvas>
+  <div class="hero__shade" aria-hidden="true"></div>
+  <div class="hero__copy">
+    <p class="kicker" data-rise>Hudson Valley Weddings at The Hill</p>
+    <h1 id="hero-h" data-rise>One wedding<br>a weekend, <em>on&nbsp;300&nbsp;acres.</em></h1>
+    <p class="lede" data-rise>A historic estate on Bells Pond Road in Hudson, NY, with horse pastures, mountain views and the 1801 Palladian Barn.</p>
+    <div class="btns" data-rise><a class="btn btn--primary btn--lg" href="#date">CHECK A 2027 DATE</a><a class="btn btn--ghost btn--lg" href="tel:+18457589002">SCHEDULE A TOUR</a></div>
+  </div>
+  <ul class="facts-bar" aria-label="At a glance">
+    <li><b>1801</b><span>Palladian Barn</span></li><li><b>300</b><span>acres</span></li><li><b>75–300</b><span>guests</span></li><li><b>May–Oct</b><span>season</span></li>
+  </ul>
+</section>
+
+<section class="date" id="date" aria-labelledby="date-h">
+  <div class="wrap date__in">
+    <div class="date__intro">
+      <div class="sun" data-sun aria-hidden="true"></div>
+      <p class="kicker kicker--gold">2027 dates</p>
+      <h2 id="date-h" class="disp">Is my 2027 date open?</h2>
+      <p>Pick your wedding day and two alternates. We check each against the season The Hill publishes, then open an email to Lisa, the site manager, with all three dates. She handles appointments and availability.</p>
+      <p class="note">This page doesn’t show live availability or pricing. Every date is a request until Lisa confirms. Call to confirm: <a href="tel:+18457589002">845-758-9002</a>.</p>
+    </div>
+    <form class="checker" id="checker" action="mailto:lisacoon231@gmail.com" method="get" enctype="text/plain" novalidate>
+      <fieldset>
+        <legend>Your dates</legend>
+        <div class="dates">
+          <label class="dcard" data-card="d1"><span>First choice</span><input type="date" name="d1" min="2027-01-01" max="2027-12-31" value="2027-06-12"></label>
+          <label class="dcard" data-card="d2"><span>Alternate 1</span><input type="date" name="d2" min="2027-01-01" max="2027-12-31"></label>
+          <label class="dcard" data-card="d3"><span>Alternate 2</span><input type="date" name="d3" min="2027-01-01" max="2027-12-31"></label>
+        </div>
+        <div class="guests">
+          <label for="guests">Guests (approx.) <output data-gout>150</output></label>
+          <input id="guests" type="range" name="guests" min="20" max="400" step="5" value="150" aria-describedby="gnote">
+          <div class="gscale" aria-hidden="true"><span>20</span><span class="gband">The barn: 75–300</span><span>400</span></div>
+          <p id="gnote" class="gnote" data-gnote></p>
+        </div>
+        <div class="row2">
+          <label>Your name (optional)<input type="text" name="name" autocomplete="name"></label>
+          <label>Phone (optional)<input type="tel" name="phone" autocomplete="tel" inputmode="tel"></label>
+        </div>
+      </fieldset>
+      <ul class="results" data-results aria-live="polite"><li>Pick a date to check it against the May–October season.</li></ul>
+      <div class="btns btns--form"><a class="btn btn--outline" href="tel:+18457589002">CALL</a><a class="btn btn--primary" data-send href="mailto:lisacoon231@gmail.com?subject=2027%20date%20request">SEND MY DATES</a></div>
+    </form>
+  </div>
+</section>
+
+<section class="day" id="day" aria-labelledby="day-h">
+  <div class="day__head wrap"><p class="kicker kicker--gold">The wedding day</p><h2 id="day-h" class="disp disp--light">From first light to the last song</h2></div>
+  <div class="day__stage" data-stage>
+    <div class="day__tint" data-tint aria-hidden="true"></div>
+    <svg class="day__arc" viewBox="0 0 200 110" aria-hidden="true"><path d="M10 100 A90 90 0 0 1 190 100" fill="none" stroke="rgba(246,241,231,.35)" stroke-width="1.5"/><circle data-arcsun cx="10" cy="100" r="7" fill="#d8a85a"/></svg>
+    <article class="scene" data-scene>
+      <picture><source type="image/webp" srcset="img/palladian-barn-800.webp 800w, img/palladian-barn-1600.webp 1600w" sizes="(max-width:800px) 230vw, 100vw"><img src="img/palladian-barn.jpg" alt="The Palladian Barn from the side: pale blue clapboard, white windows and a cupola under a blue sky." width="1600" height="1062" loading="lazy" decoding="async"></picture>
+      <div class="scene__copy"><p class="scene__n">01 · Getting ready</p><h3>The whole estate is yours</h3><p>Access two days before and the day after for setup and cleanup. A bridal day cottage, plus a private groom’s day room in the barn.</p></div>
+    </article>
+    <article class="scene" data-scene>
+      <picture><source type="image/webp" srcset="img/hilltop-ceremony-800.webp 800w, img/hilltop-ceremony-1600.webp 1600w" sizes="(max-width:800px) 230vw, 100vw"><img src="img/hilltop-ceremony.jpg" alt="Rows of white chairs set for an outdoor ceremony on the hilltop, with tall pines and distant mountains." width="1600" height="1200" loading="lazy" decoding="async"></picture>
+      <div class="scene__copy"><p class="scene__n">02 · Ceremony</p><h3>On the hill, or in the barn</h3><p>Choose from indoor and outdoor locations. If it rains, the ceremony moves downstairs or upstairs in the barn. Reverend Betsy, an ordained Interfaith Minister, is available to officiate.</p></div>
+    </article>
+    <article class="scene" data-scene>
+      <picture><source type="image/webp" srcset="img/art-barn-800.webp 800w, img/art-barn-1600.webp 1600w" sizes="(max-width:800px) 230vw, 100vw"><img src="img/art-barn.jpg" alt="The white Art Barn with its doors open and cocktail tables set out on the lawn under tall trees." width="1600" height="1080" loading="lazy" decoding="async"></picture>
+      <div class="scene__copy"><p class="scene__n">03 · Cocktails</p><h3>Out at the Art Barn</h3><p>The estate’s old blacksmith’s shop, with lovely windows and a long farm table. The wagon bar, games and outdoor furniture are on hand.</p></div>
+    </article>
+    <article class="scene" data-scene>
+      <picture><source type="image/webp" srcset="img/barn-tables-800.webp 800w, img/barn-tables-1500.webp 1500w" sizes="(max-width:800px) 230vw, 100vw"><img src="img/barn-tables.jpg" alt="Long reception tables on the Palladian Barn’s upper floor, lit by string lights, with the big arched window behind them." width="1500" height="1001" loading="lazy" decoding="async"></picture>
+      <div class="scene__copy"><p class="scene__n">04 · Dinner</p><h3>Upstairs in the Palladian Barn</h3><p>The barn holds 75 to 300 guests, with string lights, 300 padded white chairs, round, rectangular and farm tables.</p></div>
+    </article>
+    <article class="scene scene--framed" data-scene>
+      <picture><source type="image/webp" srcset="img/barn-lanterns-800.webp 800w" sizes="(min-width:700px) 520px, 90vw"><img src="img/barn-lanterns.jpg" alt="White paper lanterns hung from the beams of the barn above a set reception floor." width="800" height="600" loading="lazy" decoding="async"></picture>
+      <div class="scene__copy"><p class="scene__n">05 · Dancing, then the fire</p><h3>Amplified until 10:30, unplugged until 11</h3><p>Amplified music runs until 10:30 pm and un-amplified until 11:00 pm. Wind down by the fire pit; The Hill says to ask about setting one up.</p></div>
+    </article>
+  </div>
+</section>
+
+<section class="story" id="story" aria-labelledby="story-h">
+  <div class="wrap">
+    <p class="kicker kicker--rust">Since 1801</p>
+    <h2 id="story-h" class="disp">A long, rich story. Add a page.</h2>
+    <ol class="tl" data-tl>
+      <li><b class="tl__y">1801</b><div><h3>Henry Walter Livingston creates The Hill</h3><p>The estate on Bells Pond Road begins, known from the start for gracious entertaining.</p></div></li>
+      <li><b class="tl__y">Guests</b><div><h3>Lafayette, and European nobility</h3><p>The Hill’s grounds welcomed Lafayette and various European nobility among their many guests.</p></div></li>
+      <li><b class="tl__y">Carriage barn</b><div><h3>The Palladian Barn</h3><p>Once the estate’s carriage barn, now a two-level venue with stalls on the first floor and a vast event space on the second.</p></div></li>
+      <li><b class="tl__y">Blacksmith</b><div><h3>The Art Barn</h3><p>Where the estate’s carriages were once repaired, now a charmingly rustic barn for cocktails or a children’s space.</p></div></li>
+      <li><b class="tl__y">Today</b><div><h3>One wedding a weekend</h3><p>Weddings May through October, one per weekend and no more than 22 a year, on over 300 private acres.</p></div></li>
+    </ol>
+    <p class="note">History as told on hudsonvalleyweddings.net.</p>
+  </div>
+</section>
+
+<section class="included" id="included" aria-labelledby="inc-h">
+  <div class="wrap inc">
+    <div>
+      <p class="kicker kicker--gold">As listed by The Hill</p>
+      <h2 id="inc-h" class="disp disp--light">What’s included</h2>
+      <ul class="ticks">
+        <li>300 padded white chairs, 25 round tables, 12 rectangular tables and three farm tables</li>
+        <li>String lights in the Palladian Barn</li>
+        <li>Indoor washrooms for up to 100 people, including a handicap-accessible bathroom</li>
+        <li>Lights, fans, indoor and outdoor furniture, signs, trellises, chuppahs and games</li>
+        <li>A bridal day cottage, plus a private groom’s day room in the barn</li>
+        <li>Access two days before and the day after, for setup and cleanup</li>
+        <li>A site manager and two staff members on the day</li>
+        <li>A kid-friendly area with a miniature train, and pets welcome</li>
+      </ul>
+    </div>
+    <div class="price">
+      <h3>Pricing</h3>
+      <p>The Hill quotes custom pricing for each wedding and doesn’t publish rates. This concept doesn’t estimate one.</p>
+      <div class="btns"><a class="btn btn--ghost" href="mailto:lisacoon231@gmail.com?subject=Pricing%20request%20for%202027">GET PRICING</a></div>
+      <p class="note note--light">Call to confirm: <a href="tel:+18457589002">845-758-9002</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="grounds" id="grounds" aria-labelledby="gr-h">
+  <div class="wrap">
+    <h2 id="gr-h" class="disp">The grounds</h2>
+    <p class="lede lede--dark">Thoroughbreds in the pastures, a gazebo, wildflower fields, peonies, apple trees and dogwoods.</p>
+    <div class="mosaic">
+      <figure class="m m--wide" data-par><picture><source type="image/webp" srcset="img/horses-800.webp 800w, img/horses-1500.webp 1500w" sizes="(min-width:900px) 60vw, 220vw"><img src="img/horses.jpg" alt="Horses leaning over a wooden pasture fence, with wooded hills behind." width="1500" height="1001" loading="lazy" decoding="async"></picture></figure>
+      <figure class="m m--tall" data-par><picture><source type="image/webp" srcset="img/wagon-bar-800.webp 800w, img/wagon-bar-1200.webp 1200w" sizes="(min-width:900px) 34vw, 220vw"><img src="img/wagon-bar.jpg" alt="An old wooden farm wagon set up as a bar on the grass." width="1200" height="1600" loading="lazy" decoding="async"></picture></figure>
+      <figure class="m m--small" data-par><picture><source type="image/webp" srcset="img/field-ceremony-800.webp 800w" sizes="(min-width:900px) 420px, 100vw"><img src="img/field-ceremony.jpg" alt="White chairs and a greenery-wrapped arch set for a ceremony in a field edged by trees." width="800" height="600" loading="lazy" decoding="async"></picture></figure>
+      <div class="m m--note"><p>About two hours from New York City by car, or take Amtrak to Hudson. Minutes from Hudson’s hotels and B&amp;Bs.</p></div>
+    </div>
+    <p class="note">Photos from hudsonvalleyweddings.net.</p>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="faq-h">
+  <div class="wrap">
+    <h2 id="faq-h" class="disp">Good to know</h2>
+    <div class="acc">
+      <details><summary>When is the season?</summary><p>May through October. One wedding per weekend, and no more than 22 a year.</p></details>
+      <details><summary>How many guests?</summary><p>The barn is listed for 75 to 300 guests for ceremony and reception. Planning fewer or more? Call to confirm.</p></details>
+      <details><summary>What if it rains?</summary><p>The ceremony moves downstairs or upstairs in the Palladian Barn.</p></details>
+      <details><summary>Can we choose our own vendors?</summary><p>The Hill shares a vendor list, or you can bring your own.</p></details>
+      <details><summary>How late can the music go?</summary><p>Amplified until 10:30 pm, un-amplified until 11:00 pm.</p></details>
+      <details><summary>Are pets and kids welcome?</summary><p>Yes. There’s a kid-friendly area with a miniature train, and pets are welcome.</p></details>
+    </div>
+    <p class="note">All from The Hill’s own website. Policies may change for 2027. Call to confirm: <a href="tel:+18457589002">845-758-9002</a>.</p>
+  </div>
+</section>
+
+<section class="visit" id="visit" aria-labelledby="ct-h">
+  <div class="wrap ct">
+    <div>
+      <h2 id="ct-h" class="disp disp--light">Come walk the hill</h2>
+      <p>Tours are by appointment with Lisa, the site manager.</p>
+      <p class="big"><a href="tel:+18457589002">845-758-9002</a><br><a href="mailto:lisacoon231@gmail.com">lisacoon231@gmail.com</a></p>
+      <div class="btns"><a class="btn btn--ghost" href="tel:+18457589002">SCHEDULE A TOUR</a><a class="btn btn--ghost" href="https://maps.app.goo.gl/MemKVZzUfz6W98ZVA" target="_blank" rel="noopener">DIRECTIONS</a></div>
+    </div>
+    <address>Hudson Valley Weddings at The Hill<br>65 Bells Pond Road<br>Hudson, NY 12534<br><span class="muted">Columbia County, in the Hudson Valley</span></address>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <p class="foot__links"><a href="https://www.instagram.com/thehillweddings/" target="_blank" rel="noopener">Instagram</a><a href="https://www.facebook.com/TheHillWeddings" target="_blank" rel="noopener">Facebook</a><a href="https://hudsonvalleyweddings.net/" target="_blank" rel="noopener">Current site</a></p>
+  <p>Concept preview · not affiliated with The Hill. Photos and facts from hudsonvalleyweddings.net.</p>
+</footer>
+
+<div class="mbar" data-mbar role="navigation" aria-label="Quick actions">
+  <a class="btn btn--ghost" href="tel:+18457589002" aria-label="Call 845-758-9002 to schedule a tour">CALL TO TOUR</a>
+  <a class="btn btn--primary" href="#date">CHECK A DATE</a>
+</div>
+<script src="js/gsap.min.js" defer></script>
+<script src="js/ScrollTrigger.min.js" defer></script>
+<script src="js/lottie_light.min.js" defer></script>
+<script src="main.js" defer></script>
+</body>
+</html>
