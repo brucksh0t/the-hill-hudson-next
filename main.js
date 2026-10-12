@@ -94,7 +94,7 @@
   /* ---------- history: line draws, entries settle in ---------- */
   var tlist=document.querySelector('[data-tl]'),line=document.createElement('span');line.className='tl__line';line.setAttribute('aria-hidden','true');tlist.prepend(line);
   G.fromTo(line,{scaleY:0},{scaleY:1,ease:'none',scrollTrigger:{trigger:tlist,start:'top 75%',end:'bottom 60%',scrub:true}});
-  G.utils.toArray('.tl li').forEach(function(li){G.from(li,{opacity:0,x:30,duration:.8,ease:'power2.out',scrollTrigger:{trigger:li,start:'top 85%'}});});
+  G.utils.toArray('.tl li').forEach(function(li){G.from(li,{opacity:0,duration:.8,ease:'power2.out',scrollTrigger:{trigger:li,start:'top 85%'}});});
   G.utils.toArray('[data-par] img').forEach(function(im,i){G.fromTo(im,{yPercent:-2.5,scale:1.06},{yPercent:2.5,scale:1.06,ease:'none',scrollTrigger:{trigger:im.closest('figure'),start:'top bottom',end:'bottom top',scrub:true}});});
   G.utils.toArray('.disp').forEach(function(h){G.from(h,{opacity:0,y:24,duration:.9,ease:'power2.out',scrollTrigger:{trigger:h,start:'top 88%'}});});
 
