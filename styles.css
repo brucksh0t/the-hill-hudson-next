@@ -80,7 +80,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .scene__n{font-size:.85rem;letter-spacing:.18em;text-transform:uppercase;color:var(--gold);font-weight:700}
 .scene h3{font-family:var(--disp);font-weight:400;font-size:clamp(1.8rem,4vw,3rem);line-height:1.05;margin:.3rem 0 .6rem}
 .scene p:not(.scene__n){max-width:34em;color:#e4e0d6}
-.scene--framed picture,.scene--framed img{max-width:520px;width:90vw}
+.scene--framed picture,.scene--framed img{max-width:min(520px,72vw);width:100%}
 .scene--framed{padding-bottom:4rem}
 /* motion layout: pinned stage */
 .motion .day__stage{position:relative;height:100svh;overflow:hidden}
@@ -92,7 +92,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .motion .scene__copy{position:absolute;left:0;right:0;bottom:calc(8vh + var(--safe));margin:0 auto;z-index:2}
 .motion .scene--framed{background:radial-gradient(ellipse at 50% 30%,#3a3324,#141a16 70%)}
 .motion .scene--framed::after{display:none}
-.motion .scene--framed picture{inset:auto;position:relative;height:auto;margin:12vh auto 0;max-width:min(520px,80vw)}
+.motion .scene--framed picture{inset:auto;position:relative;height:auto;margin:12vh auto 0;max-width:min(520px,72vw)}
 .motion .scene--framed picture img{object-fit:contain;height:auto;box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 0 8px rgba(246,241,231,.08)}
 .motion .day__tint{display:block;position:absolute;inset:0;z-index:3;pointer-events:none;mix-blend-mode:soft-light;background:linear-gradient(180deg,#ffd58a,transparent);opacity:.35}
 .motion .day__arc{display:block;position:absolute;z-index:4;top:2.2rem;right:4vw;width:120px}
